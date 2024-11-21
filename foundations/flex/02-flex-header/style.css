@@ -1,7 +1,11 @@
+
+  
 .header  {
   font-family: monospace;
   background: papayawhip;
 }
+
+
 
 .logo {
   font-size: 48px;
@@ -9,6 +13,8 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+
 }
 
 ul {
@@ -16,10 +22,49 @@ ul {
   list-style-type: none;
 }
 
+
+
 a {
-  font-size: 22px;
+  font-size: 15px;
   background: white;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+/* End of Base */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-between;
+  
+}
+.logo {
+  display: flex;
+  align-self: center;
+}
+
+ul {
+  display: flex;
+  padding: 10px;
+  margin: 0px;
+
+  align-self: center;
+
+}
+
+li {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+
+
+}
+
+.left-links {
+  align-self: flex-start;
+}
+
+.right-links {
+  align-self: flex-end;
 }
